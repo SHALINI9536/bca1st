@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEERAJ Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ec32ec31;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #2245e2;
+            color: rgb(180, 178, 182);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ca3610;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>neeraj Form</h1>
+        <form action="/submit" method="POST">
+            <!-- Personal Information -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Gender -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+            <!-- Work Experience -->
+            <label for="Work Experience">Work Experience:</label>
+            <select id="Work Experience" name="Work Experienc">
+                <option value="">Enter Number</option>
+                <option value="1">1</option>
+                <option value="2+">2+</option>
+                <option value="3+">3+</option>
+                <option value="4+">4+</option>
+                <option value="5+">5+</option>
+                <option value="10+">10+</option>
+            </select>
+
+            <!-- Feedback -->
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Share your thoughts"></textarea>
+
+            <!-- You are ready to invest in -->
+            <label>You are ready to invest in</label>
+            <label for="Real Estate">Real Estate</label>
+            <input type="checkbox" id="Real Estate" name="interest" value="Real Estate">
+            <label for="Mutual Funds">Mutual Funds</label>
+            <input type="checkbox" id="Mutual Funds" name="interest" value="Mutual Funds">
+            <label for="Crypto Currency">Crypto Currency</label>
+            <input type="checkbox" id="Crypto Currency" name="interest" value="Crypto Currency">
+            <label for="Stocks & Bond">Stocks & Bonds</label>
+            <input type="checkbox" id="Stocks & Bond" name="interest" value="Stocks & Bond">
+            
+            <!-- Submit -->
+             <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
